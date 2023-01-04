@@ -1,0 +1,1 @@
+voice=[exec("import pyautogui"),exec("import time"),(pyautogui.hotkey('win')),(time.sleep(1)),(pyautogui.write('sound recorder',interval=0.2)),(pyautogui.press('enter')),(pyautogui.hotkey('ctrl','r'))]
