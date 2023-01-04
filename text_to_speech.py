@@ -1,0 +1,1 @@
+text_to_speech = [exec("import pyttsx3"),exec("import PyPDF2"),(reads:=open('the-lion-and-the-rabbit-pdf.pdf','rb')),(readable:=PyPDF2.PdfReader(reads)),(lst:=list(readable.pages)),(text := "".join(i.extract_text() for i in lst)),print(text),(speech:=pyttsx3.init()),speech.say(text),speech.runAndWait()]
